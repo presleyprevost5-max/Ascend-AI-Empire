@@ -1,0 +1,17 @@
+{
+  "name": "ascnd",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "app/shared",
+    "app/server",
+    "app/client"
+  ],
+  "scripts": {
+    "dev:server": "bun run --cwd app/server dev",
+    "dev:client": "bun run --cwd app/client dev",
+    "db:generate": "bun run --cwd app/server db:generate",
+    "db:migrate": "bun run --cwd app/server db:migrate",
+    "db:push": "bun run --cwd app/server db:push"
+  }
+}
